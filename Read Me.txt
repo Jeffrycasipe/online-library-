@@ -1,0 +1,3 @@
+1. Import the db_library.sql in the http://localhost/phpmyadmin/
+2. change the db name depending on your db
+3. change the content. change some functions if needed

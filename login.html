@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log In</title>
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-image: url('../style/librarymn.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            background: rgba(255, 255, 255, 0.9); 
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px 40px;
+            width: 100%;
+            max-width: 400px;
+        }
+        .container h1 {
+            font-weight: 600;
+            color: #334BA2;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .form-label {
+            font-weight: 500;
+            color: #334BA2;
+            display: block;
+            margin-bottom: 8px;
+        }
+        .form-control {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #BDBDBD;
+            border-radius: 8px;
+            margin-bottom: 15px;
+            font-size: 14px;
+            color: #333;
+        }
+        .form-control:focus {
+            border-color: #334BA2;
+            outline: none;
+        }
+        .form-actions {
+            text-align: center;
+        }
+        .form-actions input[type="submit"] {
+            background-color: #334BA2;
+            color: #ffffff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: 600;
+            font-size: 14px;
+        }
+        .form-actions input[type="submit"]:hover {
+            background-color: #576ED6;
+        }
+        .form-actions a {
+            display: block;
+            margin-top: 10px;
+            font-size: 13px;
+            color: #7987C2;
+            text-decoration: none;
+        }
+        .form-actions a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Log In</h1>
+        <form onsubmit="login(event)">
+            <div>
+                <label for="email" class="form-label">Email</label>
+                <input type="text" class="form-control" id="emailadd" placeholder="Enter your email">
+            </div>
+            <div>
+                <label for="password" class="form-label">Password</label>
+                <input type="password" class="form-control" id="pass" placeholder="Enter your password">
+            </div>
+            <div class="form-actions">
+                <input type="submit" value="login">
+                <a href="../src/dashboard.php"></a>
+            </div>
+        </form>
+    </div>
+    <script src="../js/jquery.js"></script>
+    <script src="../js/index.js"></script>
+</body>
+</html>

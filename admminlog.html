@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login - Virtual Library</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background-image: url(../img/images\ \(2\).jpeg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      color: #fff;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    .container {
+      color: #333;
+      background: linear-gradient(140deg, #ecf0f1, #bdc3c7);
+      padding: 20px;
+      border-radius: 20px;
+      width: 90%;
+      max-width: 400px;
+      text-align: center;
+    }
+
+    .container h1 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+      color: #2c3e50;
+    }
+
+    .container p {
+      color: #555;
+    }
+
+    .container a {
+      color: #e67e22;
+    }
+
+    .container a:hover {
+      color: #d35400;
+    }
+
+    .container input[type="text"],
+    .container input[type="password"] {
+      width: 100%;
+      height: 50px;
+      margin: 10px 0;
+      font-size: 1rem;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      background-color: #ffffff;
+    }
+
+    .container input[type="submit"] {
+      background-color: #40cc45;
+      color: white;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      width: 100%;
+      margin: 10px 0; /* Reduced space above and below the button */
+      font-size: 1rem;
+      transition: background 0.3s;
+    }
+
+    .container input[type="submit"]:hover {
+      background-color:  #38b83d;
+    }
+
+    .btn {
+      display: flex;
+      justify-content: center; /* Center the buttons */
+      margin-top: 5px; /* Reduced margin to decrease spacing */
+    }
+
+    .btn a {
+      text-decoration: none;
+      color: #e60303; /* Button color */
+      flex: 1; /* Allow links to fill available space */
+      text-align: center; /* Center text within the link */
+      padding: 10px; /* Padding for a better click area */
+      border: 1px solid #e60303; /* Border for better visibility */
+      border-radius: 5px; /* Rounded corners */
+      margin: 0 5px; /* Space between links */
+      transition: background 0.3s, color 0.3s; /* Transition effects */
+    }
+
+    .btn a:hover {
+      background-color: #c90202; /* Hover background color */
+      color: white; /* Hover text color */
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <form method="POST" action="../php/admin.php">
+      <h1>Log In as Admin</h1>
+      <input type="text" id="Uname" name="Uname" placeholder="Username" required>
+      <input type="password" id="pass" name="pass" placeholder="Password" required>
+      <input type="submit" name="admlogin" value="LOG IN">
+      <div class="btn">
+        <a href="../adminlo.html">CANCEL</a>
+      </div>
+      <!-- <p>Log in as Student! <a href="../html/login.html"><i>Log in!</i></a></p> -->
+    </form>
+  </div>
+  <script type="text/javascript" src="../jquery/jquery.js"></script>
+  <script type="text/javascript" src="../js/login.js"></script>
+</body>
+</html>
